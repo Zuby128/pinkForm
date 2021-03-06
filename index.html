@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Princess+Sofia&display=swap" rel="stylesheet">
+</head>
+<style>
+    .all{
+        margin: auto;
+        width: 80%;
+        font-family: 'Princess Sofia', cursive;
+        font-size: 1rem;
+    }
+    form{
+        margin: auto;
+        width: 60%;
+        background-color: rgb(248, 221, 226);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    h1{
+        background-color: red;
+        border-radius: 15px;
+        text-align: center;
+        padding: 5px auto 10px;
+        margin: auto;
+    }
+    fieldset{
+        margin: 15px auto 20px;
+        border-color: red;
+    }
+    legend{
+        margin-bottom: 15px;
+    }
+    .text{
+        width: 100%;
+        height: 40px;
+        margin: 0 0 25px;
+        background-color: pink;
+        border: none;
+    }
+    textarea{
+        width: 100%;
+        height: 80px;
+        margin: 0 0 25px;
+        background-color: pink;
+        border: none;
+    }
+    select{
+        width: 100%;
+        height: 40px;
+        margin: 0 0 25px;
+        background-color: pink;
+        border: none;
+    }
+    .radio{
+        border: none;
+        background-color: pink;
+    }
+    label{
+        margin-top: 20px;
+    }
+    #sign{
+        width: 100%;
+        height: 60px;
+        margin: 15px auto auto;
+        background-color: red;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="all">
+        <form>
+            <div class="form-header">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="form-body">
+                <fieldset>
+                    <legend>Your Basic Info</legend>
+                    <label for="firstname">Name:</label>
+                    <br>
+                    <input type="text" name="nam" id="firstname" class="text" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="mail" name="mail" id="email" required class="text">
+                    <br>
+                    <label for="Password">Password:</label>
+                    <br>
+                    <input type="password" name="pass" id="Password" required class="text">
+                    <br>
+                    <span>Age:</span>
+                    <br>
+                    <input type="radio" name="age" id="under" class="radio">
+                    <label for="under">Under 13</label>
+                    <br>
+                    <input type="radio" name="age" id="over" class="radio">
+                    <label for="over">Over 13</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Profile</legend>
+                    <label for="bio">Bio:</label>
+                    <br>
+                    <textarea name="bio" id="bio" cols="25" rows="5"></textarea>
+                    <br>
+                    <label for="lessons">Choose a lesson</label>
+                    <br>
+                    <select name="role" id="role" required>
+                        <optgroup label="web">
+                            <option value="Front-End Developer">Front-End Developer</option>
+                            <option value="JS Developer">JS Developer</option>
+                            <option value="Python Developer">Python Developer</option>
+                            <option value="Django Developer">Django Developer</option>
+                            <option value="Web Designer">Web Designer</option>
+                            <option value="Word Press Developer">Word Press Developer</option>
+                        </optgroup>
+                        <optgroup label="Mobile">
+                            <option value="Android Developer">Android Developer</option>
+                            <option value="IOS Developer">IOS Developer</option>
+                            <option value="Mobile Designer">Mobile Designer</option>
+                        </optgroup>
+                        <optgroup label="Business">
+                            <option value="Business Owner">Business Owner</option>
+                            <option value="Freelancer">Freelancer</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                        <label>Interest:</label><br>
+                        <input type="checkbox" name="inter" id="int-1" value="Development" class="radio">
+                        <label for="vec-1">Development</label><br>
+                        <input type="checkbox" name="inter" id="int-2" value="Design" class="radio">
+                        <label for="vec-2">Design</label><br>
+                        <input type="checkbox" name="inter" id="int-3" value="Business" class="radio">
+                        <label for="vec-3">Business</label>
+                </fieldset>
+            </div>
+            <div class="button">
+                <input type="button" value="Sign Up" id="sign">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
